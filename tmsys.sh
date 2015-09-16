@@ -4,7 +4,7 @@
 # author eric at ewpt3ch dot com #
 ##################################
 
-# usage: system.sh 
+# usage: system.sh
 
 # check if we're in a tmux session, prevent nesting
 if [[ "$TMUX" != "" ]]; then
