@@ -31,7 +31,6 @@ fi
 
 tmux new-session -d -s "${session}" -n "edit"
 tmux split-window -v -p 20 -t "${session}"
-tmux send-keys -t "${session}:1.1" "vim" C-m
 tmux new-window -n "servers" -t "${session}"
 tmux split-window -v -t "${session}:2"
 tmux new-window -n "scratch" -t "${session}"
