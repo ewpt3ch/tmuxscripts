@@ -33,6 +33,10 @@ tmux split-window -v -p 30 -t "${session}:2"
 tmux send-keys -t "${session}:2.1" "journalctl -f" C-m
 tmux new-window -n "scratch" -t "${session}"
 
+#create a session called email
+#tmux new-session -d -s "email" -n "email"
+#tmux send-keys -t "email:1" "mutt" C-m
+
 # finally select window 1 and attach to the new session
 tmux select-window -t "${session}:1"
 tmux attach-session -t "${session}"
